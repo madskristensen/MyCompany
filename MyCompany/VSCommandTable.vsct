@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+
+  <Commands package="guidMyCompanyPackage">
+    <Groups>
+      <Group guid="guidMyCompanyPackageCmdSet" id="MyMenuGroup" priority="0x9600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_STANDARD"/>
+      </Group>
+      <Group guid="guidMyCompanyPackageCmdSet" id="SubMenuGroup" priority="0x0100">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="MainMenu"/>
+      </Group>
+      <Group guid="guidMyCompanyPackageCmdSet" id="HRMenuGroup" priority="0x0200">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="MainMenu"/>
+      </Group>
+    </Groups>
+
+    <Menus>
+      <Menu guid="guidMyCompanyPackageCmdSet" id="MainMenu" priority="100" type="MenuController">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>My Company</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="guidMyCompanyPackageCmdSet" id="Wiki" priority="0x0100" type="Button">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="SubMenuGroup" />
+        <Icon guid="Icons" id="Logo" />
+        <CommandFlag>FixMenuController</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Developer Wiki</ButtonText>
+          <LocCanonicalName>.MyCompany.DeveloperWiki</LocCanonicalName>
+        </Strings>
+      </Button>
+      
+      <Button guid="guidMyCompanyPackageCmdSet" id="BuildServer" priority="0x0200" type="Button">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="SubMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="LocalServer" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Build Server</ButtonText>
+          <LocCanonicalName>.MyCompany.BuildServer</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidMyCompanyPackageCmdSet" id="HRPortal" priority="0x0100" type="Button">
+        <Parent guid="guidMyCompanyPackageCmdSet" id="HRMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="User" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>HR Portal</ButtonText>
+          <LocCanonicalName>.MyCompany.HRPortal</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="guidMyCompanyPackageCmdSet" id="Wiki" editor="guidVSStd97" key1="8" mod1="Shift Alt" />
+    <KeyBinding guid="guidMyCompanyPackageCmdSet" id="BuildServer" editor="guidVSStd97" key1="9" mod1="Shift Alt" />
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidMyCompanyPackage" value="{d601c386-cb36-4b5a-97fe-b7671acc7b5f}" />
+
+    <GuidSymbol name="guidMyCompanyPackageCmdSet" value="{0a2b6c0c-f680-4d26-9ecd-e5a28d7e0b66}">
+      <IDSymbol name="MainMenu" value="0x1010" />
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="SubMenuGroup" value="0x1030" />
+      <IDSymbol name="HRMenuGroup" value="0x1040" />
+      <IDSymbol name="Wiki" value="0x0100" />
+      <IDSymbol name="BuildServer" value="0x0200" />
+      <IDSymbol name="HRPortal" value="0x0300" />
+    </GuidSymbol>
+
+    <GuidSymbol name="Icons" value="{5057c68c-d67d-4bd6-ba1a-c109efc22adc}" >
+      <IDSymbol name="Logo" value="1" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
