@@ -8,7 +8,7 @@ Download the [CI build](https://www.vsixgallery.com/extension/61a7ba6e-0cd8-4912
 
 -----------------------------------------
 
-Coming soon...
+Use this as the starting point for creating an extension for your team.
 
 ## License
 [Apache 2.0](LICENSE)
