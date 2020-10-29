@@ -1,6 +1,6 @@
 # My Company extension
 
-[![Build status](https://ci.appveyor.com/api/projects/status/urgqxelt4cufglpf?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitymargin)
+[![Build status](https://ci.appveyor.com/api/projects/status/t0a6fk2w5gxw5vx2?svg=true)](https://ci.appveyor.com/project/madskristensen/mycompany)
 
 The easiest way to share links relevant to all developers in your team
 
