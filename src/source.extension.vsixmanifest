@@ -4,6 +4,8 @@
         <Identity Id="61a7ba6e-0cd8-4912-a6c0-ff3f86d79c2e" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>My Company</DisplayName>
         <Description xml:space="preserve">The easiest way to share links relevant to all developers in your team</Description>
+        <MoreInfo>https://github.com/madskristensen/MyCompany</MoreInfo>
+        <License>Resources\LICENSE</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
     </Metadata>
