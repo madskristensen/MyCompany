@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\BuildServerCommand.cs" />
+    <Compile Include="Commands\HrPortalCommand.cs" />
     <Compile Include="Commands\WikiCommand.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>

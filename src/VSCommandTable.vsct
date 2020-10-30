@@ -49,13 +49,13 @@
         </Strings>
       </Button>
 
-      <Button guid="guidMyCompanyPackageCmdSet" id="HRPortal" priority="0x0100" type="Button">
+      <Button guid="guidMyCompanyPackageCmdSet" id="HrPortal" priority="0x0100" type="Button">
         <Parent guid="guidMyCompanyPackageCmdSet" id="HRMenuGroup" />
         <Icon guid="ImageCatalogGuid" id="User" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
           <ButtonText>HR Portal</ButtonText>
-          <LocCanonicalName>.MyCompany.HRPortal</LocCanonicalName>
+          <LocCanonicalName>.MyCompany.HrPortal</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
@@ -76,7 +76,7 @@
       <IDSymbol name="HRMenuGroup" value="0x1040" />
       <IDSymbol name="Wiki" value="0x0100" />
       <IDSymbol name="BuildServer" value="0x0200" />
-      <IDSymbol name="HRPortal" value="0x0300" />
+      <IDSymbol name="HrPortal" value="0x0300" />
     </GuidSymbol>
 
     <GuidSymbol name="Icons" value="{5057c68c-d67d-4bd6-ba1a-c109efc22adc}" >

@@ -32,7 +32,7 @@ namespace MyCompany
         public const int HRMenuGroup = 0x1040;
         public const int Wiki = 0x0100;
         public const int BuildServer = 0x0200;
-        public const int HRPortal = 0x0300;
+        public const int HrPortal = 0x0300;
         public const int Logo = 0x0001;
     }
 }

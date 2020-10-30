@@ -6,7 +6,7 @@ namespace MyCompany
 {
 	internal sealed class BuildServerCommand
 	{
-		private const string _url = "https://example.com";
+		private const string _url = "https://example.com?page=buildserver";
 
 		public static async Task InitializeAsync(AsyncPackage package)
 		{
