@@ -45,9 +45,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\BuildServerCommand.cs" />
-    <Compile Include="Commands\HrPortalCommand.cs" />
-    <Compile Include="Commands\WikiCommand.cs" />
+    <Compile Include="Commands\UrlCommandFactory.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

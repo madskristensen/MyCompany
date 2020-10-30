@@ -15,9 +15,11 @@ namespace MyCompany
         {
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            await WikiCommand.InitializeAsync(this);
-            await BuildServerCommand.InitializeAsync(this);
-            await HrPortalCommand.InitializeAsync(this);
+            UrlCommandFactory factory = await UrlCommandFactory.CreateAsync(this);
+
+            factory.Register(PackageIds.Wiki, "https://example.com?page=wiki");
+            factory.Register(PackageIds.BuildServer, "https://example.com?page=buildserver");
+            factory.Register(PackageIds.HrPortal, "https://example.com?page=hrportal");
         }
     }
 }
