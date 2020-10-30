@@ -60,6 +60,10 @@
     <Compile Include="MyCompanyPackage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="feed.pkgdef">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Monikers.imagemanifest">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
