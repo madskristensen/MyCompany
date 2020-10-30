@@ -10,5 +10,11 @@ Download the [CI build](https://www.vsixgallery.com/extension/61a7ba6e-0cd8-4912
 
 Use this as the starting point for creating an extension for your team.
 
+**Steps to customize**
+
+* Fork the repo
+* Modify and add buttons in *VSCommandTable.vsct*
+* Modify and add URLs for the buttons in the *MyCompanyPackage.cs*
+
 ## License
 [Apache 2.0](LICENSE)
