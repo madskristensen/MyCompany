@@ -8,13 +8,17 @@ Download the [CI build](https://www.vsixgallery.com/extension/61a7ba6e-0cd8-4912
 
 -----------------------------------------
 
-Use this as the starting point for creating an extension for your team.
+Use this as the starting point for creating an extension for your team. The extension puts a button with your company logo on the *Standard* toolbar that shows a sub-menu with links relevant to developers on your team.
+
+![Menu](art/menu.png)
 
 **Steps to customize**
 
-* Fork the repo
-* Modify and add buttons in *VSCommandTable.vsct*
-* Modify and add URLs for the buttons in the *MyCompanyPackage.cs*
+1. Fork the repo
+2. Change the ID (guid) in *source.extension.vsixmanifest*
+3. Modify or add buttons in *VSCommandTable.vsct*
+4. Modify and add URLs for the buttons in the *MyCompanyPackage.cs*
+5. Change the orange fruit icons to your company logo
 
 ## License
 [Apache 2.0](LICENSE)
