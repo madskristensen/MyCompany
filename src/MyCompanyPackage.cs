@@ -9,6 +9,7 @@ namespace MyCompany
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(PackageGuids.guidMyCompanyPackageString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideBindingPath]
     public sealed class MyCompanyPackage : AsyncPackage
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
