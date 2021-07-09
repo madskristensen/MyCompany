@@ -82,6 +82,11 @@
     <Reference Include="System.Design" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Community.VisualStudio.VSCT">
+      <Version>16.0.29.6</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="15.0.1" ExcludeAssets="runtime">
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

@@ -7,7 +7,7 @@ using Task = System.Threading.Tasks.Task;
 namespace MyCompany
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(PackageGuids.guidMyCompanyPackageString)]
+    [Guid(PackageGuids.MyCompanyString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [ProvideBindingPath]
     public sealed class MyCompanyPackage : AsyncPackage

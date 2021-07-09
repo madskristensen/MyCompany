@@ -12,11 +12,8 @@ namespace MyCompany
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string guidMyCompanyPackageString = "d601c386-cb36-4b5a-97fe-b7671acc7b5f";
-        public static Guid guidMyCompanyPackage = new Guid(guidMyCompanyPackageString);
-
-        public const string guidMyCompanyPackageCmdSetString = "0a2b6c0c-f680-4d26-9ecd-e5a28d7e0b66";
-        public static Guid guidMyCompanyPackageCmdSet = new Guid(guidMyCompanyPackageCmdSetString);
+        public const string MyCompanyString = "d601c386-cb36-4b5a-97fe-b7671acc7b5f";
+        public static Guid MyCompany = new Guid(MyCompanyString);
 
         public const string IconsString = "5057c68c-d67d-4bd6-ba1a-c109efc22adc";
         public static Guid Icons = new Guid(IconsString);

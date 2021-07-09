@@ -23,7 +23,7 @@ namespace MyCompany
 
         internal void Register(int commandId, string url)
         {
-            var cmdId = new CommandID(PackageGuids.guidMyCompanyPackageCmdSet, commandId);
+            var cmdId = new CommandID(PackageGuids.MyCompany, commandId);
             var cmd = new MenuCommand((s, e) => Execute(url), cmdId);
             _commandService.AddCommand(cmd);
         }
