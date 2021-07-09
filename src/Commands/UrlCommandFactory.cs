@@ -17,7 +17,7 @@ namespace MyCompany
         {
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(package.DisposalToken);
 
-            IMenuCommandService commandService = await package.GetServiceAsync<IMenuCommandService, IMenuCommandService>();
+            var commandService = (IMenuCommandService)await package.GetServiceAsync(typeof(IMenuCommandService));
             return new UrlCommandFactory(commandService);
         }
 
