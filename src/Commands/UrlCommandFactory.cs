@@ -21,16 +21,16 @@ namespace MyCompany
             return new UrlCommandFactory(commandService);
         }
 
-        internal void Register(int commandId, string url)
+        internal void Register(int commandId, string url, string args = "")
         {
             var cmdId = new CommandID(PackageGuids.MyCompany, commandId);
-            var cmd = new MenuCommand((s, e) => Execute(url), cmdId);
+            var cmd = new MenuCommand((s, e) => Execute(url, args), cmdId);
             _commandService.AddCommand(cmd);
         }
 
-        private static void Execute(string url)
+        private static void Execute(string url, string args)
         {
-            System.Diagnostics.Process.Start(url);
+            System.Diagnostics.Process.Start(url ,args);
         }
     }
 }
